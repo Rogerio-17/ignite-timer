@@ -13,7 +13,7 @@ import {
 } from './styles'
 
 const newCycleFormValidationSchema = zod.object({
-  task: zod.string().min(1, "Inofrme erro")
+  task: zod.string().min(1, "Inofrme a tarefa")
 })
 
 export function Home() {
