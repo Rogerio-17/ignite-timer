@@ -22,7 +22,7 @@ export function Home() {
     task: zod.string().min(1, 'Informe a tarefa'),
     minutesAmount: zod
       .number()
-      .min(1, 'O intervalo tem que ser de no minimo 5 minutos')
+      .min(5, 'O intervalo tem que ser de no minimo 5 minutos')
       .max(60, 'O intervalo tem que ser de no minimo 60 minutos.'),
   })
   type NewCycleFormData = zod.infer<typeof newCycleFormValidationSchema>
